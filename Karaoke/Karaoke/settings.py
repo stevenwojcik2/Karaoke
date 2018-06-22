@@ -25,7 +25,7 @@ SECRET_KEY = '08pbp@!tn8$h0+s9f7hmx0#si3+8xus_dbap#vwcoyrkbhp_@t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['204.48.19.29']
+ALLOWED_HOSTS = ['204.48.19.29', 'http://hamkaraoke.com/','hamkaraoke.com']
 
 
 # Application definition
