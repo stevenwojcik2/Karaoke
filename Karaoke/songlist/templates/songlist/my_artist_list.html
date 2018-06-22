@@ -1,0 +1,8 @@
+<h1>HAM Catalogue</h1>
+<ul>
+{% for artist in object_list %}
+   <a href="{{ artist.get_absolute_url }}"><li>{{ artist.name }}</li></a>
+{% empty %}
+    <li>No artists yet.</li>
+{% endfor %}
+</ul>

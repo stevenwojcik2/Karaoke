@@ -1,0 +1,9 @@
+<h1>{{album.artist}}</h1>
+<h2>{{album.title}}</h2>
+<ul>
+{% for track in object.track_set.all %}
+   <a href="{{ track.get_absolute_url }}"><li>{{ track.title }}</li></a>
+{% empty %}
+    <li>No songs yet.</li>
+{% endfor %}
+</ul>
