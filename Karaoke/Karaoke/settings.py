@@ -129,9 +129,9 @@ if DEBUG is True:
 else:
     STATIC_URL = '/static/'
               
-    STATIC_ROOT = '/var/www/venv/Karaoke/Karaoke/static/'
+    STATIC_ROOT = '/var/www/env/Karaoke/Karaoke/static/'
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, '/var/www/venv/Karaoke/Karaoke/static/')
+        os.path.join(BASE_DIR, '/var/www/env/Karaoke/Karaoke/static/')
     ]
     MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, '/var/www/venv/Karaoke/Karaoke/media/')
+    MEDIA_ROOT = os.path.join(BASE_DIR, '/var/www/env/Karaoke/Karaoke/media/')
