@@ -22,6 +22,9 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ArtistListView.as_view(), name="artist-list"),
+    path('home/', ArtistListView.as_view(), name="artist-list"),
+    path('artist/<slug:pk>/home/', ArtistListView.as_view(), name="artist-list"),
+    path('track/<slug:pk>/home/', ArtistListView.as_view(), name="artist-list"),
     path('artist/<slug:pk>/', ArtistDetailView.as_view(), name="artist-detail"),
     path('track/<slug:pk>/', TrackDetailView.as_view(), name="track-detail"),
    
